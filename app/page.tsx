@@ -49,8 +49,12 @@ export default function Home() {
   }, [model, market, categoryFilter]);
 
   const modelFeedbacks = useMemo(() => {
-    return feedbacks.filter((f) => f.model === model);
-  }, [model]);
+    return feedbacks.filter((f) => {
+      if (f.model !== model) return false;
+      if (market !== "All" && f.market !== market) return false;
+      return true;
+    });
+  }, [model, market]);
 
   return (
     <div className={isDark ? "dark" : "light"}>
