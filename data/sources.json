@@ -1,0 +1,11 @@
+[
+  { "name": "ŠkodaHome.cz", "url": "https://www.skodahome.cz", "type": "Forum", "market": "CZ", "description": "Largest Czech Škoda owner community forum" },
+  { "name": "Elektromobily.org", "url": "https://www.elektromobily.org", "type": "News", "market": "CZ", "description": "Czech electric vehicle news and reviews portal" },
+  { "name": "r/skoda", "url": "https://www.reddit.com/r/skoda/", "type": "Reddit", "market": "Global", "description": "Škoda subreddit with international owner discussions" },
+  { "name": "r/electricvehicles", "url": "https://www.reddit.com/r/electricvehicles/", "type": "Reddit", "market": "Global", "description": "General EV subreddit with Škoda owner posts" },
+  { "name": "Autobazar.eu Reviews", "url": "https://www.autobazar.eu/recenzie/", "type": "Official Review", "market": "SK", "description": "Slovak automotive marketplace with owner reviews" },
+  { "name": "Elektromobily.sk", "url": "https://www.elektromobily.sk", "type": "News", "market": "SK", "description": "Slovak electric vehicle portal with tests and reviews" },
+  { "name": "SkodaCommunity.de", "url": "https://www.skodacommunity.de", "type": "Forum", "market": "DE", "description": "German Škoda community forum" },
+  { "name": "GoingElectric.de", "url": "https://www.goingelectric.de", "type": "Forum", "market": "DE", "description": "Major German EV forum with charging infrastructure data" },
+  { "name": "Motor-Talk.de", "url": "https://www.motor-talk.de", "type": "Forum", "market": "DE", "description": "Germany's largest automotive community" }
+]

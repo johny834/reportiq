@@ -1,0 +1,120 @@
+[
+  {
+    "id": "prob-1",
+    "title": "DC Fast Charging Session Failures",
+    "titleCz": "Selhání DC rychlonabíjení",
+    "description": "Multiple owners report DC fast charging sessions failing on first attempt, requiring restart. Most common with ČEZ and non-IONITY networks.",
+    "category": "Charging",
+    "severity": "high",
+    "occurrences": 47,
+    "affectedModels": ["Enyaq", "Elroq"],
+    "affectedMarkets": ["CZ", "SK", "DE"],
+    "sourceLinks": [
+      { "url": "https://www.skodahome.cz/forum/elektromobily/enyaq-nabijeni-problemy-t12345.html", "type": "Forum" },
+      { "url": "https://www.goingelectric.de/forum/skoda-enyaq/dc-laden-fehler-t34567.html", "type": "Forum" }
+    ]
+  },
+  {
+    "id": "prob-2",
+    "title": "Infotainment Lag After OTA Update 3.5",
+    "titleCz": "Zpomalení infotainmentu po OTA aktualizaci 3.5",
+    "description": "System-wide performance degradation reported after software version 3.5. Touchscreen response times doubled, navigation stuttering.",
+    "category": "Software/Infotainment",
+    "severity": "high",
+    "occurrences": 63,
+    "affectedModels": ["Enyaq"],
+    "affectedMarkets": ["CZ", "DE"],
+    "sourceLinks": [
+      { "url": "https://www.elektromobily.org/enyaq-software-update-recenze/", "type": "News" },
+      { "url": "https://www.skodacommunity.de/threads/ota-35-performance.87654/", "type": "Forum" }
+    ]
+  },
+  {
+    "id": "prob-3",
+    "title": "MyŠkoda App Connectivity Issues",
+    "titleCz": "Problémy s připojením aplikace MyŠkoda",
+    "description": "App frequently loses connection to vehicle. Remote status, climate pre-conditioning and charging status unreliable. Affects both iOS and Android.",
+    "category": "Software/Infotainment",
+    "severity": "medium",
+    "occurrences": 38,
+    "affectedModels": ["Enyaq", "Elroq"],
+    "affectedMarkets": ["CZ", "SK", "DE"],
+    "sourceLinks": [
+      { "url": "https://www.skodacommunity.de/threads/myskoda-app-verbindungsprobleme.98765/", "type": "Forum" },
+      { "url": "https://www.reddit.com/r/skoda/comments/xyz789/myskoda_app_issues/", "type": "Reddit" }
+    ]
+  },
+  {
+    "id": "prob-4",
+    "title": "Winter Range Drop Exceeds Expectations",
+    "titleCz": "Zimní dojezd výrazně nižší než udávaný",
+    "description": "Real-world winter range drops 25-35% from WLTP rating. Owners in CZ/SK report 270-290 km vs rated 390+ km. Heat pump helps but doesn't fully compensate.",
+    "category": "Range",
+    "severity": "medium",
+    "occurrences": 31,
+    "affectedModels": ["Enyaq", "Elroq"],
+    "affectedMarkets": ["CZ", "SK"],
+    "sourceLinks": [
+      { "url": "https://www.elektromobily.sk/recenzie/skoda-enyaq-zimny-dojazd", "type": "News" },
+      { "url": "https://www.reddit.com/r/electricvehicles/comments/winter_range_enyaq/", "type": "Reddit" }
+    ]
+  },
+  {
+    "id": "prob-5",
+    "title": "Charging Curve Steep Drop After 60% SOC",
+    "titleCz": "Prudký pokles nabíjecí křivky nad 60 % SOC",
+    "description": "DC charging speed drops significantly after 60% state of charge. Time from 60-80% nearly equals 10-60%. Affects trip planning and long-distance usability.",
+    "category": "Charging",
+    "severity": "medium",
+    "occurrences": 27,
+    "affectedModels": ["Elroq"],
+    "affectedMarkets": ["SK", "DE"],
+    "sourceLinks": [
+      { "url": "https://www.elektromobily.sk/test/skoda-elroq-nabijacie-testy", "type": "News" },
+      { "url": "https://www.goingelectric.de/forum/skoda-elroq/ladekurve-analyse-t89012.html", "type": "Forum" }
+    ]
+  },
+  {
+    "id": "prob-6",
+    "title": "Voice Assistant 'Laura' Limited Understanding",
+    "titleCz": "Hlasová asistentka Laura – omezené porozumění",
+    "description": "Voice assistant struggles with complex or compound commands. Cannot handle charging-related queries or multi-step navigation requests reliably.",
+    "category": "Software/Infotainment",
+    "severity": "low",
+    "occurrences": 22,
+    "affectedModels": ["Enyaq", "Elroq"],
+    "affectedMarkets": ["DE", "CZ"],
+    "sourceLinks": [
+      { "url": "https://www.skodacommunity.de/threads/elroq-sprachsteuerung-laura-probleme.11234/", "type": "Forum" }
+    ]
+  },
+  {
+    "id": "prob-7",
+    "title": "Minor Paint Imperfections",
+    "titleCz": "Drobné vady laku",
+    "description": "Orange peel texture reported on some body panels, particularly rear quarter panels. Cosmetic issue only, not affecting durability.",
+    "category": "Build Quality",
+    "severity": "low",
+    "occurrences": 15,
+    "affectedModels": ["Enyaq"],
+    "affectedMarkets": ["DE", "CZ"],
+    "sourceLinks": [
+      { "url": "https://www.reddit.com/r/electricvehicles/comments/def456/enyaq_paint_quality_discussion/", "type": "Reddit" }
+    ]
+  },
+  {
+    "id": "prob-8",
+    "title": "Limited Boot Space in Elroq",
+    "titleCz": "Omezený prostor kufru v Elroqu",
+    "description": "470L boot capacity feels tight for families, especially compared to Enyaq's 585L. Loading sill is high which makes heavy items harder to load.",
+    "category": "Build Quality",
+    "severity": "low",
+    "occurrences": 12,
+    "affectedModels": ["Elroq"],
+    "affectedMarkets": ["SK", "CZ"],
+    "sourceLinks": [
+      { "url": "https://www.reddit.com/r/skoda/comments/pqr678/elroq_trunk_space_review/", "type": "Reddit" },
+      { "url": "https://www.autobazar.eu/recenzie/skoda-elroq-50-test-34567", "type": "Official Review" }
+    ]
+  }
+]

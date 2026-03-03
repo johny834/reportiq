@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+  
+  body {
+    @apply bg-skoda-surface text-skoda-text-primary font-sans antialiased;
+  }
+
+  .dark body,
+  body {
+    @apply bg-skoda-surface text-skoda-text-primary;
+  }
+
+  .light body {
+    @apply bg-light-surface text-light-text-primary;
+  }
+}
+
+@layer components {
+  .pill-button {
+    @apply px-4 py-2 rounded-full text-body-sm font-medium 
+           border border-skoda-border transition-all duration-300 
+           hover:border-skoda-green/50 hover:bg-skoda-green/10
+           active:scale-95 cursor-pointer select-none;
+  }
+
+  .pill-button.active {
+    @apply bg-skoda-green text-skoda-surface border-skoda-green 
+           shadow-[0_0_20px_rgba(120,250,174,0.2)];
+  }
+
+  .card {
+    @apply bg-skoda-surface-card border border-skoda-border rounded-skoda-lg 
+           p-5 transition-all duration-300 
+           hover:border-skoda-green/30 hover:shadow-[0_4px_24px_rgba(120,250,174,0.08)];
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-caption font-medium;
+  }
+
+  .glow-text {
+    @apply text-skoda-green drop-shadow-[0_0_12px_rgba(120,250,174,0.4)];
+  }
+}
+
+@layer utilities {
+  .stagger-1 { animation-delay: 0.05s; }
+  .stagger-2 { animation-delay: 0.1s; }
+  .stagger-3 { animation-delay: 0.15s; }
+  .stagger-4 { animation-delay: 0.2s; }
+  .stagger-5 { animation-delay: 0.25s; }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-skoda-green to-skoda-secondary bg-clip-text text-transparent;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.skoda.border') transparent;
+  }
+}
+
+/* Light mode overrides */
+.light .pill-button {
+  @apply border-light-border text-light-text-primary hover:border-skoda-green-dark/50 hover:bg-skoda-green/10;
+}
+
+.light .pill-button.active {
+  @apply bg-skoda-green-dark text-white border-skoda-green-dark;
+}
+
+.light .card {
+  @apply bg-light-surface-card border-light-border shadow-sm 
+         hover:border-skoda-green-dark/30 hover:shadow-md;
+}
+
+.light .badge {
+  @apply text-light-text-primary;
+}
